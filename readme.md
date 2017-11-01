@@ -1,5 +1,16 @@
 ## About Larapress
 
+**Install**
+
+* composer install
+
+* php artisan migrate
+* php artisan db:seed
+* Reference https://laracasts.com/discuss/channels/laravel/how-do-i-change-localhost-to-a-custom-domain-name-like-appdevindex and make domain as like larapress.dev
+
+* php artisan key:generate
+
+
 **Larapress** is a CMS focused on ease of use and fast workflow when using the backend. Ajax is used as much as possible in the backend to improve the speed and responsivity of the backend. Main focus of Larapress is ease of use for both developers extending it or it's normal users using it for their personal websites.
 
 * It supports following features out of box:
