@@ -9,5 +9,6 @@
   "/js/gallery_index.js": "/js/gallery_index.js",
   "/js/todos_editor.js": "/js/todos_editor.js",
   "/js/frontend/rendering/app.js": "/js/frontend/rendering/app.js",
-  "/css/app.css": "/css/app.css"
+  "/css/app.css": "/css/app.css",
+  "/js/settings.js": "/js/settings.js"
 }

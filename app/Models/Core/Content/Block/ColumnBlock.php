@@ -25,14 +25,14 @@ class ColumnBlock extends Model
         $settings['minHeight'] = '180px';
 
         $settings['heightResponsive'] = '0';
-        $settings['height'] = '50px';
+        $settings['height'] = 'auto';
         $settings['heightTablet'] = '50px';
         $settings['heightMobile'] = '50px';
 
         $settings['paddingResponsive'] = '0';
-        $settings['padding'] = '0px 15px';
-        $settings['paddingTablet'] = '0px 15px';
-        $settings['paddingMobile'] = '0px 15px';
+        $settings['padding'] = '10px';
+        $settings['paddingTablet'] = '0px';
+        $settings['paddingMobile'] = '0px';
 
         $settings['marginResponsive'] = '0';
         $settings['margin'] = '0px auto';

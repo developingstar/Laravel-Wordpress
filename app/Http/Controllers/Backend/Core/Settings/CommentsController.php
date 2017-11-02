@@ -10,15 +10,15 @@ class CommentsController extends Controller
 {
     public function index()
     {
-        $settings = SiteSetting::getSection('Comments');
+        $settings = SiteSetting::getSection('Comments', true);
         return view('core.settings.comments.index', compact('settings'));
     }
 
     public function save(Request $request)
     {
         if($request->ajax()) {
-            foreach ($request->except('_token') as $key => $value) {
-                SiteSetting::set('Comments', $key, $value);
+            foreach ($request->settings as $key => $setting) {
+                SiteSetting::set('Comments', $key, $setting['value'], $setting['type']);
             }
 
             return response()->json([

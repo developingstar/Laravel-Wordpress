@@ -110,12 +110,12 @@ table td, .markdown-body table th {
 
 .column-block:first-child {
     margin-left: 0px !important;
-    padding: 0px;
+    /*padding-left: 0px;*/
 }
 
 .column-block:last-child {
     margin-right: 0px !important;
-    padding: 0px;
+    /*padding-right: 0px;*/
 }
 
 @media (max-width: 900px) {

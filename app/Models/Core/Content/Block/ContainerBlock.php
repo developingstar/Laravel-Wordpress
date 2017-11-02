@@ -20,7 +20,7 @@ class ContainerBlock extends Model
         $settings['visibleMobile'] =  '1';
 
         $settings['minHeight'] = '180px';
-        $settings['height'] = '400px';
+        $settings['height'] = 'auto';
 
         $settings['display'] = 'block';
         $settings['flexDirection'] = 'column';

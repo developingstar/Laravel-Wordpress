@@ -10,15 +10,15 @@ class WebsiteController extends Controller
 {
     public function index()
     {
-        $settings = SiteSetting::getSection('Website');
+        $settings = SiteSetting::getSection('Website', true);
         return view('core.settings.website.index', compact('settings'));
     }
 
     public function save(Request $request)
     {
         if($request->ajax()) {
-            foreach ($request->except('_token') as $key => $value) {
-                SiteSetting::set('Website', $key, $value);
+            foreach ($request->settings as $key => $setting) {
+                SiteSetting::set('Website', $key, $setting['value'], $setting['type']);
             }
 
             return response()->json([

@@ -33,6 +33,7 @@ mix.webpackConfig({
 mix.copy('app/Modules/**/Resources/Assets/js/*.js', 'public/js/modules/');
 mix.copy('app/Modules/**/Resources/Assets/css/*.css', 'public/css/modules/');
 mix.js('resources/assets/js/components/frontend/rendering/app.js', 'public/js/frontend/rendering')
+    .js('resources/assets/js/settings.js', 'public/js')
     .js('resources/assets/js/adminvue.js', 'public/js')
     .js('resources/assets/js/content_index.js', 'public/js')
     .js('resources/assets/js/content_editor.js', 'public/js')

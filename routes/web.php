@@ -47,7 +47,6 @@ Route::get('/backend/categories', function() {
 });
 
 Route::group(['middleware'=>'setTheme:Admin_Theme'], function () {
-
     // Authentication Routes...
     Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
     Route::post('login', 'Auth\LoginController@login');
